@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.create-button {
+  margin-left: auto;
+}
+
+
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the table */
+  margin: 0 auto; /* Center the table within its container */
+}
+
+/* Style the table header */
+th {
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style the table rows */
+tr {
+  border: 1px solid #dddddd;
+}
+
+/* Style the table cells */
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+/* Add some space between the "Edit" and "Delete" links */
+td a {
+  margin-right: 5px;
+}
+
+/* Style the "Create" button */
+button {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: blue;
+  text-align: right;
+  text-decoration: none;
+  color: #fff;
+  background-color: blue
+  border-radius: 5px;
+}
+
+/* Change the link color on hover */
+button:hover {
+  background-color: #00008B;
+  color: yellow;
+}
+
+/* Add the following styles for the Edit and Delete buttons */
+a.edit-button {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+a.delete-button {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+}

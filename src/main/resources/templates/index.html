@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>FIREBASE CRUD</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<h1>Firebase To-Do List</h1>
+<br>
+<a href="/create">
+    <button class="create-button">CREATE NEW</button>
+</a>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Action</th>
+    </tr>
+    <tr th:each="todo : ${todoList}">
+        <td th:text="${todo.id}">ID</td>
+        <td th:text="${todo.name}">Name</td>
+        <td th:text="${todo.position}">Position</td>
+        <td>
+            <!-- Add delete and edit buttons for each To-Do item -->
+            <a th:href="@{/update/{id}(id=${todo.id})}" class="edit-button">Edit</a>
+            <a th:href="@{/delete/{id}(id=${todo.id})}" class="delete-button">Delete</a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
